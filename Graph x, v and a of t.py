@@ -50,12 +50,12 @@ with open(args.file) as f:
 # Calcular la velocidad
 vx = np.gradient(x, t)  # Velocity in x direction
 #vy = np.gradient(y, t)  # Velocity in y direction
-speed = vx  # Magnitude of velocity
+speed = vx  
 
 # Calcular la aceleración
 ax = np.gradient(vx, t)  # Acceleration in x direction
 #ay = np.gradient(vy, t)  # Acceleration in y direction
-acceleration = ax  # Magnitude of acceleration
+acceleration = ax 
 
 # Ploteo
 fig, axs = plt.subplots(3, 1, figsize=(7, 7))
